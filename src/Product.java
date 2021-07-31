@@ -15,4 +15,12 @@ public class Product {
     public void setArtikelNummer(int artikelNummer) {
         this.artikelNummer = artikelNummer;
     }
+
+    public double getProductPrijs() {
+        return productPrijs;
+    }
+
+    public java.lang.String getProductNaam() {
+        return productNaam;
+    }
 }

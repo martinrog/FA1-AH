@@ -85,17 +85,12 @@ public class main {
         product10.setProductPrijs(2.15);
         product10.setArtikelNummer(965813);
 
-        System.out.println("\nPRODUCTENLIJST:");
-        System.out.println(product1.getProductNaam());
-        System.out.println(product2.getProductNaam());
-        System.out.println(product3.getProductNaam());
-        System.out.println(product4.getProductNaam());
-        System.out.println(product5.getProductNaam());
-        System.out.println(product6.getProductNaam());
-        System.out.println(product7.getProductNaam());
-        System.out.println(product8.getProductNaam());
-        System.out.println(product9.getProductNaam());
-        System.out.println(product10.getProductNaam());
+        private ArrayList<Product>  product_list = new ArrayList<Product>();
+
+        product_list.add(product1);
+        product_list.add(product5);
+        product_list.add(product8);
+        product_list.add(product9);
 
 
 

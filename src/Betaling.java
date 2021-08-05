@@ -15,7 +15,7 @@ public abstract class Betaling implements Aankoop {
     }
 
     @Override
-    public String pay(double euros) {
+    public String betalen(double euros) {
 
         return "Payed " + euros + " euros using " + toString() ;
     }

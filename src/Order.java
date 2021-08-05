@@ -41,7 +41,7 @@ public class Order {
 
     }
     public double getTotaalprice() {
-        return totaalprice;
+        return totaalPrijs;
     }
 
     public void toString2(){

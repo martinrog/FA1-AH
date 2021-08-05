@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class main {
 
     public static void main (String[] args) {
@@ -9,7 +11,7 @@ public class main {
         customer1.setNaam("Martin");
         customer1.setAdres("Hoornse Hop 9");
         customer1.setOrderNummer(1234567890);
-        customer1.toString1();
+        customer1.toString();
 
         //input new employees
         System.out.println("\nWerknemer(s) Albert Heijn:");
@@ -35,58 +37,21 @@ public class main {
         leverancier2.setLeverancierAdres("Liguster 2, Den Haag");
 
         // Productenlijst
-        Product product1 = new Product();
-        product1.setProductNaam("Melk");
-        product1.setProductPrijs(0.99);
-        product1.setArtikelNummer(122343);
+        Product product1 = new Product("Melk",0.99,122343);
+        Product product2 = new Product("Boter",1.20,762308);
+        Product product3 = new Product("Brood",1.10,872527);
+        Product product4 = new Product("Kaas",2.30,827550);
+        Product product5 = new Product("Kropsla",0.90,989361);
+        Product product6 = new Product("Komkommer",0.65,649274);
+        Product product7 = new Product("Tomaat",0.15,345628);
+        Product product8 = new Product("Aardappels",2.75,955192);
+        Product product9 = new Product("Watermeloen",1.55,865841);
+        Product product10 = new Product("Pruimen",2.15,965813);
 
-        Product product2 = new Product();
-        product2.setProductNaam("Boter");
-        product2.setProductPrijs(1.20);
-        product2.setArtikelNummer(762308);
 
-        Product product3 = new Product();
-        product3.setProductNaam("Brood");
-        product3.setProductPrijs(1.10);
-        product3.setArtikelNummer(872527);
+        ArrayList<Product> product_list = new ArrayList<Product>();
 
-        Product product4 = new Product();
-        product4.setProductNaam("Kaas");
-        product4.setProductPrijs(2.30);
-        product4.setArtikelNummer(827550);
-
-        Product product5 = new Product();
-        product5.setProductNaam("Kropsla");
-        product5.setProductPrijs(0.90);
-        product5.setArtikelNummer(989361);
-
-        Product product6 = new Product();
-        product6.setProductNaam("Komkommer");
-        product6.setProductPrijs(0.65);
-        product6.setArtikelNummer(649274);
-
-        Product product7 = new Product();
-        product7.setProductNaam("Tomaat");
-        product7.setProductPrijs(0.15);
-        product7.setArtikelNummer(345628);
-
-        Product product8 = new Product();
-        product8.setProductNaam("Aardappels");
-        product8.setProductPrijs(2.75);
-        product8.setArtikelNummer(955192);
-
-        Product product9 = new Product();
-        product9.setProductNaam("Watermeloen");
-        product9.setProductPrijs(1.55);
-        product9.setArtikelNummer(865841);
-
-        Product product10 = new Product();
-        product10.setProductNaam("Pruimen");
-        product10.setProductPrijs(2.15);
-        product10.setArtikelNummer(965813);
-
-        private ArrayList<Product>  product_list = new ArrayList<Product>();
-
+        //Gekozen producten
         product_list.add(product1);
         product_list.add(product5);
         product_list.add(product8);

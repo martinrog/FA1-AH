@@ -1,10 +1,12 @@
+import java.util.ArrayList;
+
 public class Klant {
 
     private String naam;
     private int orderNummer;
     private java.lang.String adres;
     private Order order;
-    private ArrayList<Product>  producten_lijst = new ArrayList<Product>();
+    private ArrayList<Product> producten_lijst = new ArrayList<Product>();
 
 
 

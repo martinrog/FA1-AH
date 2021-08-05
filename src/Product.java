@@ -10,6 +10,7 @@ public class Product {
         this.artikelNummer = id;
     }
 
+
     public double getProductPrijs() {
         return productPrijs;}
 
